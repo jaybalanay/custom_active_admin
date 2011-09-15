@@ -145,7 +145,7 @@ module ActiveAdmin
         # Renders the content for the footer
         def build_footer
           div :id => "footer" do
-            para "#{title} | #{active_admin_application.site_title}".html_safe
+            para [title,active_admin_application.site_title].join(' | ').html_safe
           end
         end
 
