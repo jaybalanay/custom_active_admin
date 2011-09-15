@@ -22,7 +22,7 @@ module ActiveAdmin
       {
         :sessions => "active_admin/devise/sessions",
         :passwords => "active_admin/devise/passwords",
-				:registration => "active_admin/devise/registrations"
+				:registrations => "active_admin/devise/registrations"
       }
     end
 
