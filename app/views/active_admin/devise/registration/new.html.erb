@@ -3,7 +3,7 @@
 
   <% scope = Devise::Mapping.find_scope!(resource_name) %>
 	<%= "#{scope} | #{resource_name}" %>
-  <%= active_admin_form_for(resource, :as => resource_name, :url => send(:"#{scope}_session_path"), :html => { :id => "session_new" }) do |f| 
+  <%= active_admin_form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => { :id => "session_new", :method => :post }) do |f| 
     f.inputs do
       f.input :email
       f.input :password
