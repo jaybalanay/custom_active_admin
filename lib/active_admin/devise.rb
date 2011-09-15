@@ -21,7 +21,7 @@ module ActiveAdmin
     def self.controllers
       {
         :sessions => "active_admin/devise/sessions",
-        :passwords => "active_admin/devise/passwords"
+        :passwords => "active_admin/devise/passwords",
 				:registration => "active_admin/devise/registrations"
       }
     end
